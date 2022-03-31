@@ -1,0 +1,189 @@
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  /* Primary  */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* Neutral  */
+  --d-blue-main: hsl(217, 54%, 11%);
+  --d-blue-card: hsl(216, 50%, 16%);
+  --d-blue-line: hsl(215, 32%, 27%);
+  --d-blue-links: hsl(228, 45%, 44%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--d-blue-main);
+}
+
+h1,
+h3 {
+  text-align: center;
+  color: var(--soft-blue);
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 30%;
+}
+
+h3 {
+  font-weight: 300;
+  letter-spacing: 3.8px;
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 255, 247, 1),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+
+
+.cards-container {
+  width: 100%;
+  margin: 0 auto;
+  margin: 30px 0 40px;
+  background-color: var(--d-blue-main);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 25px;
+  /* border: 1px solid tomato; */
+}
+
+.card {
+  width: 300px;
+  border-radius: 1.5em;
+  background-color: var(--d-blue-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  color: var(--white);
+}
+
+footer a {
+  color: var(--d-blue-links);
+}
+
+a {
+  color: var(--soft-blue);
+}
+
+.img-equilibrium {
+  margin-top: 25px;
+  width: 85%;
+  border-radius: 7px;
+}
+
+.description {
+  width: 85%;
+}
+
+.title {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.title:hover{
+  transition: .7s;
+  color: var(--cyan);
+}
+
+.paragraph {
+  color: var(--soft-blue);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.icons {
+  width: 85%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.value {
+  color: var(--cyan);
+  font-weight: 600;
+  display: flex;
+}
+
+.eth-ico{
+  margin-right: 5px;
+}
+
+.time {
+  color: var(--soft-blue);
+  font-weight: 600;
+  display: flex;
+}
+
+.clock-ico{
+  margin-right: 5px;
+}
+
+.card-separator {
+  width: 85%;
+  border: 0;
+  height: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.avatar{
+  width: 85%;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.img-avatar{
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.avatar-text{
+  display: flex;
+  align-items: center;
+}
+
+.creator{
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.creator:hover{
+  transition: .7s;
+  color: var(--cyan);
+  font-weight: 400;
+}
+
+.git-img {
+  width: 30px;
+  margin: 5px;
+}
+
+.git-link {
+  text-decoration: none;
+  font-weight: 300;
+  color: var(--white);
+}
